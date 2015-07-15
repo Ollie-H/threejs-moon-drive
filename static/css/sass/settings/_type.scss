@@ -1,0 +1,9 @@
+// #TYPE
+
+@import '../tools/css3/font-face';
+
+// @include fonts((droid-sans--regular,droid-sans--regular,400) (droid-sans--bold,droid-sans--bold,700) (droid-sans--mono,droid-sans--mono,400));
+
+$droid-sans--regular: 'droid-sans--regular', sans-serif;
+$droid-sans--bold: 'droid-sans--bold', sans-serif;
+$droid-sans--mono: 'droid-sans--mono', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;

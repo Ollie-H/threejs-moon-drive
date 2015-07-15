@@ -1,0 +1,54 @@
+
+body{
+  min-height: 1000px;
+}
+
+.look-around {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  background: #222;
+  color: #ddd;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: all 0.2s linear;
+}
+
+.look-around:hover{
+  background: #ddd;
+  color: #222;
+}
+
+.js-back{
+  display: none;
+}
+
+.loader{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 30px;
+  width: 30px;
+  display: none;
+}
+
+.loading .loader{
+  display: inline-block;
+  text-align: center;
+}
+
+.loading .look-around{
+  display: none;
+}

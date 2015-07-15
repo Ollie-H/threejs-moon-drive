@@ -1,0 +1,23 @@
+.button,
+%button {
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #2099D8;
+    border: 2px solid #2099D8;
+    background: none;
+    &:hover {
+        color: inherit;
+    }
+    &:focus,
+    &:active {
+        outline: 0;
+    }
+    &.active,
+    &:active {
+        color: #fff;
+        border: 2px solid #2099D8;
+        background: #2099D8;
+    }
+}

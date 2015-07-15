@@ -1,0 +1,52 @@
+.tree {
+    background: #f5f2f0;
+    padding: 1em;
+    margin: .5em 0 20px 0;
+    overflow: auto;
+    &.hide-all {
+        .folder__checkbox + .tree__container {
+            display: none !important;
+        }
+    }
+    &.show-all {
+        .folder__checkbox + .tree__container {
+            display: block !important;
+        }
+    }
+}
+
+.tree,
+.tree__container {
+    list-style: none;
+}
+
+.tree__container {
+    margin-bottom: 0;
+}
+
+.tree.show-all {
+    .folder__checkbox + .tree__container {
+        display: block;
+    }
+}
+
+.folder__label {
+    font-family: $droid-sans--bold;
+}
+
+.folder__checkbox {
+    display: none;
+    + .tree__container {
+        display: none;
+    }
+}
+
+.folder__checkbox:checked + ol {
+    display: block;
+}
+
+.hint {
+    font-size: em(14px);
+    color: #c2c2c2;
+    font-family: $droid-sans--regular;
+}

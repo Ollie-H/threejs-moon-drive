@@ -1,0 +1,31 @@
+@media print {
+    *,
+    a {
+        color: $base--text-color !important;
+        background-color: #fff !important;
+        border: 0 !important;
+        &::before,
+        &::after {
+            content: "" !important;
+        }
+    }
+    .accordion__content {
+        display: block !important;
+    }
+    iframe,
+    form {
+        display: none !important;
+    }
+    img {
+        max-width: 50%;
+    }
+    a::after {
+        content: "url "attr(href) !important;
+        margin-left: 10px;
+        color: #ccc;
+        font-family: arial;
+        font-weight: normal;
+        font-size: 12px;
+        text-transform: lowercase;
+    }
+}

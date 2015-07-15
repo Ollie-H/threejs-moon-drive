@@ -1,0 +1,78 @@
+// #PAGE
+// Page-level styling, e.g. `html` and `body` elements, etc.
+
+// 1. One off bits of maths to get our base font size in ems and our base line height in a unitless value.
+
+html {
+    font-size: ($base--font-size / 16px) +em; // [1]
+    line-height: $base--line-height / $base--font-size; // [1]
+    color: $base--text-color;
+    font-family: $droid-sans--regular;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    max-width: em(1024px);
+    margin: 0 auto;
+    @include media-query(tablet-up) {
+        padding: 0 30px;
+    }
+}
+
+ul,
+ol {
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ol {
+    padding-left: 22px;
+    ol {
+        margin: 0;
+        list-style-type: lower-alpha;
+    }
+}
+
+ul {
+    ul {
+        margin: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: #2099D8;
+    &:hover {
+        color: inherit;
+    }
+    &:focus,
+    &:active {
+        outline: 0;
+    }
+    > code {
+        color: inherit !important;
+    }
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+pre {
+    margin-bottom: 20px;
+}
+
+strong {
+    font-family: $droid-sans--bold;
+}
+
+.important {
+    border: 2px dashed #c2c2c2;
+    padding: 10px;
+}
